@@ -5,6 +5,8 @@ VisualStudioVersion = 17.10.35027.167
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrendMarket.EntityLayer", "TrendMarket.EntityLayer\TrendMarket.EntityLayer.csproj", "{765CF5F3-C66C-4F33-BA39-D71984FB0832}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrendMarket.DataAccessLayer", "TrendMarket.DataAccessLayer\TrendMarket.DataAccessLayer.csproj", "{225CA5ED-6270-4236-A102-12BB5C97001A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{765CF5F3-C66C-4F33-BA39-D71984FB0832}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{765CF5F3-C66C-4F33-BA39-D71984FB0832}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{765CF5F3-C66C-4F33-BA39-D71984FB0832}.Release|Any CPU.Build.0 = Release|Any CPU
+		{225CA5ED-6270-4236-A102-12BB5C97001A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{225CA5ED-6270-4236-A102-12BB5C97001A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{225CA5ED-6270-4236-A102-12BB5C97001A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{225CA5ED-6270-4236-A102-12BB5C97001A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

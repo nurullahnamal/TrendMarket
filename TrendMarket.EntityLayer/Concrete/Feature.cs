@@ -6,11 +6,12 @@ using System.Threading.Tasks;
 
 namespace TrendMarket.EntityLayer.Concrete
 {
-    public class About
+    public class Feature
     {
-        public int AboutId { get; set; }
+        public int FeatureId { get; set; }
         public string Title { get; set; }
         public string Description { get; set; }
+        public bool Status { get; set; }
 
     }
 }
