@@ -20,7 +20,7 @@ namespace TrendMarket.DataAccessLayer.Repositories
         }
 
 
-        public void Delete(T id)
+        public void Delete(int id)
         {
             var value=_trendMarketContext.Set<T>().Find(id);
             _trendMarketContext.Set<T>().Remove(value);
