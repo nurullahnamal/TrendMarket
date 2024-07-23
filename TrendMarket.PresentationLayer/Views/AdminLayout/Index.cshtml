@@ -1,24 +1,29 @@
-﻿
-<!DOCTYPE html>
+﻿@{
+    Layout = null;
+}
 
+<!DOCTYPE html>
 <html lang="en">
 
 @await Component.InvokeAsync("_HeadLayoutComponentPartial")
+
 <body>
-	<div class="wrapper">
-		<!-- Sidebar -->
-		@await Component.InvokeAsync("_SidebarLayoutComponentPartial")
-		<!-- End Sidebar -->
-		@await Component.InvokeAsync("_MainPanelLayoutComponentPartial")
+    <div class="wrapper">
 
-		@await Component.InvokeAsync("_FooterLayoutComponentPartial")
+        @await Component.InvokeAsync("_SidebarLayoutComponentPartial")
 
-	</div>
+        @await Component.InvokeAsync("_MainPanelLayoutComponentPartial")
 
-	<!-- Custom template | don't include it in your project! -->
-	@await Component.InvokeAsync("_CustomTemplateLayoutComponentPartial")
-	<!-- End Custom template -->
-	</div>
-	@await Component.InvokeAsync("_ScriptsLayoutComponentPartial")
+        @RenderBody()
+
+        @await Component.InvokeAsync("_FooterLayoutComponentPartial")
+
+    </div>
+
+    @await Component.InvokeAsync("_CustomTemplateLayoutComponentPartial")
+
+    </div>
+
+    @await Component.InvokeAsync("_ScriptsLayoutComponentPartial")
 </body>
 </html>
