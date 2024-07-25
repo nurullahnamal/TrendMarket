@@ -14,7 +14,7 @@ namespace TrendMarket.DataAccessLayer.Context
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Server=DESKTOP-18KR4VC\\SQLEXPRESS;initial catalog=TrendMarket;integrated security=true");
+            optionsBuilder.UseSqlServer("Server=DESKTOP-31KRPAH\\SQLEXPRESS;initial catalog=TrendMarket;integrated security=true");
 
         }
 
