@@ -11,7 +11,7 @@ using TrendMarket.DataAccessLayer.Context;
 namespace TrendMarket.DataAccessLayer.Migrations
 {
     [DbContext(typeof(TrendMarketContext))]
-    [Migration("20240717123829_mg1")]
+    [Migration("20240802161750_mg1")]
     partial class mg1
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
