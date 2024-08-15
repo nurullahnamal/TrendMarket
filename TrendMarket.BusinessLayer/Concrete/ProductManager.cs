@@ -4,36 +4,37 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using TrendMarket.BusinessLayer.Abstract;
+using TrendMarket.DataAccessLayer.Abstract;
 using TrendMarket.EntityLayer.Concrete;
 
 namespace TrendMarket.BusinessLayer.Concrete
 {
     public class ProductManager : IProductService
     {
-        private readonly IProductService _productService;
+        private readonly IProductDal _productDal;
+        public ProductManager(IProductDal ProductDal)
+        {
+            _productDal = ProductDal;
+        }
         public void TDelete(int id)
         {
-           _productService.TDelete(id); 
+            _productDal.Delete(id);
         }
-
         public List<Product> TGetAll()
         {
-          return  _productService.TGetAll();
+            return _productDal.GetAll();
         }
-
         public Product TGetById(int id)
         {
-            return _productService.TGetById(id);
+            return _productDal.GetById(id);
         }
-
         public void TInsert(Product entity)
         {
-           _productService.TInsert(entity);
+            _productDal.Insert(entity);
         }
-
         public void TUpdate(Product entity)
         {
-            _productService.TUpdate(entity);
+            _productDal.Update(entity);
         }
     }
 }
