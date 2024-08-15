@@ -20,7 +20,8 @@ namespace TrendMarket.PresentationLayer.Controllers
         }
         public IActionResult ProductListWithCategory() 
         {
-            return View();
+            var values =_productService.TProductListWithCategory();
+            return View(values);
         }
     }
 }
