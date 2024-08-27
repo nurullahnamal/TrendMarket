@@ -56,7 +56,7 @@
                             <br />
 
                             <label> Product Category</label>
-                            <input type="text" asp-for="CategoryId" class="form-control" />
+                            <select asp-for="CategoryId" class="form-control" asp-items="ViewBag.categories"></select>
                             <br />
 
                             <button class="btn btn-primary">Create Product</button>
