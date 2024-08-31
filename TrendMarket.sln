@@ -3,13 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.35027.167
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrendMarket.EntityLayer", "TrendMarket.EntityLayer\TrendMarket.EntityLayer.csproj", "{765CF5F3-C66C-4F33-BA39-D71984FB0832}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TrendMarket.EntityLayer", "TrendMarket.EntityLayer\TrendMarket.EntityLayer.csproj", "{765CF5F3-C66C-4F33-BA39-D71984FB0832}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrendMarket.DataAccessLayer", "TrendMarket.DataAccessLayer\TrendMarket.DataAccessLayer.csproj", "{225CA5ED-6270-4236-A102-12BB5C97001A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TrendMarket.DataAccessLayer", "TrendMarket.DataAccessLayer\TrendMarket.DataAccessLayer.csproj", "{225CA5ED-6270-4236-A102-12BB5C97001A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrendMarket.BusinessLayer", "TrendMarket.BusinessLayer\TrendMarket.BusinessLayer.csproj", "{33F23AE9-6499-4C9C-959A-0463CAD02653}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TrendMarket.BusinessLayer", "TrendMarket.BusinessLayer\TrendMarket.BusinessLayer.csproj", "{33F23AE9-6499-4C9C-959A-0463CAD02653}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrendMarket.PresentationLayer", "TrendMarket.PresentationLayer\TrendMarket.PresentationLayer.csproj", "{72C41A9F-6A56-4149-B2D9-ACE738F4A6FA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TrendMarket.PresentationLayer", "TrendMarket.PresentationLayer\TrendMarket.PresentationLayer.csproj", "{72C41A9F-6A56-4149-B2D9-ACE738F4A6FA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrendMarket.DtoLayer", "TrendMarket.DtoLayer\TrendMarket.DtoLayer.csproj", "{56AF2F06-86A4-4B7E-B6DC-F5EE125533B1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{72C41A9F-6A56-4149-B2D9-ACE738F4A6FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{72C41A9F-6A56-4149-B2D9-ACE738F4A6FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{72C41A9F-6A56-4149-B2D9-ACE738F4A6FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{56AF2F06-86A4-4B7E-B6DC-F5EE125533B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56AF2F06-86A4-4B7E-B6DC-F5EE125533B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56AF2F06-86A4-4B7E-B6DC-F5EE125533B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56AF2F06-86A4-4B7E-B6DC-F5EE125533B1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
