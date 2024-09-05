@@ -17,6 +17,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\TrendMarket.BusinessLayer\TrendMarket.BusinessLayer.csproj" />
+    <ProjectReference Include="..\TrendMarket.DtoLayer\TrendMarket.DtoLayer.csproj" />
   </ItemGroup>
 
 </Project>
