@@ -4,44 +4,37 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using TrendMarket.BusinessLayer.Abstract;
+using TrendMarket.DataAccessLayer.Abstract;
 using TrendMarket.EntityLayer.Concrete;
 
 namespace TrendMarket.BusinessLayer.Concrete
 {
     public class SliderManager : ISliderService
     {
-        private readonly ISliderService _sliderService;
-
-        public SliderManager(ISliderService sliderService)
+        private readonly ISliderDal _sliderDal;
+        public SliderManager(ISliderDal sliderDal)
         {
-            _sliderService = sliderService;
+            _sliderDal = sliderDal;
         }
-
         public void TDelete(int id)
         {
-            _sliderService.TDelete(id);
+            _sliderDal.Delete(id);
         }
-
         public List<Slider> TGetAll()
         {
-            return _sliderService.TGetAll();
-
+            return _sliderDal.GetAll();
         }
-
         public Slider TGetById(int id)
         {
-
-            return _sliderService.TGetById(id);
+            return _sliderDal.GetById(id);
         }
-
         public void TInsert(Slider entity)
         {
-            _sliderService.TInsert(entity); 
+            _sliderDal.Insert(entity);
         }
-
         public void TUpdate(Slider entity)
         {
-           _sliderService.TUpdate(entity);
+            _sliderDal.Update(entity);
         }
     }
 }

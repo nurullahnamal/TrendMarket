@@ -7,7 +7,7 @@ using TrendMarket.EntityLayer.Concrete;
 
 namespace TrendMarket.DataAccessLayer.Abstract
 {
-    public interface ISliderDal:IGenericDal<Slider>
+    public interface ISliderDal : IGenericDal<Slider>
     {
     }
 }

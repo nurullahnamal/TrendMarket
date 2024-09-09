@@ -1,3 +1,4 @@
+using System.Reflection;
 using TrendMarket.BusinessLayer.Abstract;
 using TrendMarket.BusinessLayer.Concrete;
 using TrendMarket.DataAccessLayer.Abstract;
@@ -15,6 +16,11 @@ builder.Services.AddScoped<ICategoryService, CategoryManager>();
 builder.Services.AddScoped<IProductDal, EfProductDal>();
 builder.Services.AddScoped<IProductService, ProductManager>();
 
+
+builder.Services.AddScoped<ISliderDal, EfSliderDal>();
+builder.Services.AddScoped<ISliderService, SliderManager>();
+
+builder.Services.AddAutoMapper(Assembly.GetExecutingAssembly());
 
 builder.Services.AddControllersWithViews();
 

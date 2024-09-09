@@ -9,18 +9,15 @@ namespace TrendMarket.PresentationLayer.Mapping
     {
         public GeneralMapping()
         {
-            CreateMap<ResultAboutDto,About>().ReverseMap();
+            CreateMap<ResultAboutDto, About>().ReverseMap();
             CreateMap<CreateAboutDto, About>().ReverseMap();
             CreateMap<GetByIdAboutDto, About>().ReverseMap();
             CreateMap<UpdateAboutDto, About>().ReverseMap();
-
 
             CreateMap<ResultSliderDto, Slider>().ReverseMap();
             CreateMap<CreateSliderDto, Slider>().ReverseMap();
             CreateMap<GetByIdSliderDto, Slider>().ReverseMap();
             CreateMap<UpdateSliderDto, Slider>().ReverseMap();
-
-
         }
     }
 }
