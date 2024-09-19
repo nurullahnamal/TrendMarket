@@ -38,7 +38,7 @@ namespace TrendMarket.PresentationLayer.Controllers
             return RedirectToAction("SliderList");
         }
 
-        public IActionResult Deleteslider(int id)
+        public IActionResult DeleteSlider(int id)
         {
             _sliderService.TDelete(id);
             return RedirectToAction("SliderList");
